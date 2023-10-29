@@ -1,0 +1,41 @@
+field: b0d567f5-9a6d-4988-ad46-4b76323444db # Post Content
+fieldLayouts:
+  e59d1120-ad36-454a-9fd4-7a5f8a887584:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: efe51184-5178-491d-9826-eb7be0f955d0 # Quote
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  efe51184-5178-491d-9826-eb7be0f955d0: # Quote
+    columnSuffix: kpscpcjc
+    contentColumnType: text
+    fieldGroup: null
+    handle: quote
+    instructions: ''
+    name: Quote
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: quote
+name: Quote
+sortOrder: 3

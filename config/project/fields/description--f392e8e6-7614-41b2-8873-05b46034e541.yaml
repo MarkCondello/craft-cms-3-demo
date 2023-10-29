@@ -1,0 +1,19 @@
+columnSuffix: joyfkbst
+contentColumnType: text
+fieldGroup: 4ef16dd2-1924-469a-b4dd-6e1e44068db3 # Global
+handle: description
+instructions: ''
+name: Description
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

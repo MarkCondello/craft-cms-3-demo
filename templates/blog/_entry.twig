@@ -1,0 +1,47 @@
+{# You can omit the `.twig` when referencing another template: #}
+{% extends '_layout' %}
+
+{# Load the attached image: #}
+{% set featuredImage = entry.featuredImage.one() %}
+
+{# Load attached topics: #}
+{% set topics = entry.topics.all() %}
+{# Craft’s understanding of our content model is also why we ca n access the attached categories via entry.topics in our individual post #}
+{# Load content blocks: #}
+{% set postContent = entry.postContent.all() %}
+{# Provide something to the `content` block in `_layout.twig`: #}
+{% block content %}
+
+{# {{ dump(entry.author) }} #}
+{# {% dd featuredImage %} #}
+
+<h1>{{ entry.title }}</h1>
+<p style="margin: 0;">Written by: <a href="mailto:{{entry.author.email}}">{{entry.author.username}}</a></p>
+<time datetime="{{ entry.postDate | atom }}">
+{{ entry.postDate|date('F j, Y')}}
+</time>
+
+{% if topics | length %}
+<ul class="topics">
+  {% for topic in topics %}
+    <li>{{ topic.getLink() }}</li>
+  {% endfor %}
+</ul>
+{% endif %}
+
+{# Output the image, if one was found: #}
+{% if featuredImage %}
+  <div class="feature-image">
+    {{ featuredImage.getImg({
+        mode: 'fit',
+        width: 1200,
+      }) }}
+    {# This one change reduced our page’s total size to 310KB—or by 99%! #}
+  </div>
+{% endif %}
+
+<div class="post-content">
+  {% include 'blog/_feed' %}
+</div>
+{% endblock %}
+

@@ -1,0 +1,46 @@
+dateModified: 1698356271
+email:
+  fromEmail: mark.condello@sgyagency.com.au
+  fromName: 'Craft Cms 3'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    0bbe1a78-28d2-4089-84b9-1a61a75874cd: Topics # Topics
+    0eb9f3e7-c22c-4b37-b178-041dffd7428e: Text # Text
+    4ef16dd2-1924-469a-b4dd-6e1e44068db3: Global # Global
+    6cbc408f-c523-4b00-bf9f-b3197aff79f0: About # About
+    6ee721e2-4515-49a9-85eb-465d40e690b4: Blog # Blog
+    28fe9c2f-cfc3-46cb-b61c-0a8848f9187d: Images # Images
+    31e18a9d-bbb5-49fe-bde6-548a731041ef: SiteInfo # SiteInfo
+    51c97ce3-fefb-497b-b29d-9ffdbc379cae: Image # Image
+    77e26224-d08a-4f57-b474-fef3332a73ec: Post # Post
+    83b528d0-fc01-46cd-980f-53d4c49e0ea3: 'Craft Cms 3' # Craft Cms 3
+    357a1f41-92d6-4968-a99c-9ede4842822b: Summary # Summary
+    4977e197-97b8-4936-b9ca-d51c3143f2d3: About # About
+    a57f871f-284a-42cf-b1bf-5c202be4d0c5: Blog # Blog
+    ab201fe0-9011-4b2e-88f4-cafa912cbfb1: Text # Text
+    b0d567f5-9a6d-4988-ad46-4b76323444db: 'Post Content' # Post Content
+    c3f845d3-f0a0-44cd-ad86-8726ec3484de: Image # Image
+    c4dd095f-d021-49d1-acf9-66e3093fd9e3: 'Craft Cms 3' # Craft Cms 3
+    c8708321-64ab-461c-898a-8d656b71503c: 'Profile Photo' # Profile Photo
+    cb7a5208-9180-4c13-b564-e8f0f433579d: Image # Image
+    d3b4698a-4caf-4547-b29a-37848970ca33: 'Post Categories' # Post Categories
+    d7dc379b-101a-46ae-bff1-7d384eceadbc: Quote # Quote
+    e1fd1f90-4bce-4674-a486-4a3511acd5bc: Bio # Bio
+    e8280534-9671-479c-9a57-a7c8f015a027: 'Featured Image' # Featured Image
+    eb64dffd-e5e9-48d5-a519-3dbcb7ec366a: About # About
+    efe51184-5178-491d-9826-eb7be0f955d0: Quote # Quote
+    f5d970b8-7732-4537-8116-fbb65ff7c551: Common # Common
+    f392e8e6-7614-41b2-8873-05b46034e541: Description # Description
+system:
+  edition: solo
+  live: true
+  name: 'Craft Cms 3'
+  schemaVersion: 3.8.0.1
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

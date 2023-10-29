@@ -1,0 +1,41 @@
+defaultPlacement: end
+fieldLayouts:
+  e5274726-2325-4232-bda8-2d37e5070e16:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: topics
+name: Topics
+siteSettings:
+  c4dd095f-d021-49d1-acf9-66e3093fd9e3: # Craft Cms 3
+    hasUrls: true
+    template: blog/_topic
+    uriFormat: 'blog/topics/{slug}'
+structure:
+  maxLevels: 1
+  uid: fa777255-2cce-4986-937b-a3279c6d5bcb

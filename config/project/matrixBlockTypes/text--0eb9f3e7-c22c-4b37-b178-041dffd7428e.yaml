@@ -1,0 +1,41 @@
+field: b0d567f5-9a6d-4988-ad46-4b76323444db # Post Content
+fieldLayouts:
+  39ea1fcf-3eec-4931-96bd-8ac182c312d8:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: ab201fe0-9011-4b2e-88f4-cafa912cbfb1 # Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  ab201fe0-9011-4b2e-88f4-cafa912cbfb1: # Text
+    columnSuffix: rfuktluv
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '12'
+      multiline: '1'
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: text
+name: Text
+sortOrder: 1

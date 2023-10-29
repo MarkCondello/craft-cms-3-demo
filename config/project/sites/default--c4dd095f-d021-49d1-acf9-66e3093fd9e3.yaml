@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-AU
+name: 'Craft Cms 3'
+primary: true
+siteGroup: 83b528d0-fc01-46cd-980f-53d4c49e0ea3 # Craft Cms 3
+sortOrder: 1

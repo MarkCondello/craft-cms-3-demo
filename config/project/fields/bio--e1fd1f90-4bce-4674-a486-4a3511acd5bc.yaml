@@ -1,0 +1,19 @@
+columnSuffix: ewnbjwex
+contentColumnType: text
+fieldGroup: eb64dffd-e5e9-48d5-a519-3dbcb7ec366a # About
+handle: bio
+instructions: ''
+name: Bio
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '8'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

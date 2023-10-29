@@ -1,0 +1,48 @@
+{% extends '_layout' %}
+
+{% block content %}
+{% set posts = craft.entries().section('blog').limit(1) %}
+{# {% set posts = craft.entries().section('blog').all() %} #}
+
+{% paginate posts as pageInfo, pageEntries %}
+
+{% for post in posts %}
+    {% set image = post.featuredImage.one() %}
+    {% set topics = post.topics %}
+<article>
+    {% if image %}
+    <div class="thumbnail">
+    {{ image.getImg() }}
+    </div>
+    {% endif %}
+    <h2>{{ post.title }}</h2>
+    <p style="margin: 0;">Written by: <a href="mailto:{{post.author.email}}">{{post.author.username}}</a></p>
+    <time datetime="{{ post.postDate|date('c') }}">{{ post.postDate|date('F j, Y') }}</time>
+
+    {% for topic in topics %}
+    <a href="{{ topic.url }}">{{ topic.title }}</a>
+    {% endfor %}
+    {% include 'blog/_feed' with {
+    postContent: post.postContent.all()
+    } only %}
+
+    <p>{{ post.summary }}</p>
+    <a href="{{ post.url }}">Read More</a>
+</article>
+{% endfor %}
+
+{% if pageInfo.prevUrl %}<a href="{{ pageInfo.prevUrl }}">Previous Page</a>{% endif %}
+{% if pageInfo.nextUrl %}<a href="{{ pageInfo.nextUrl }}">Next Page</a>{% endif %}
+{# <h1>Hello from {{ siteName }}</h1>
+<p>Today is {{ now | date }}!</p>
+
+{% set colors = ['red', 'green', 'blue'] %}
+<p>The following list contains {{ colors | length }} color(s).</p>
+<ul>
+{% for color in colors | sort %}
+    <li style="color: {{ color }}">
+    {{ color | title }}
+    </li>
+{% endfor %}
+</ul> #}
+{% endblock %}

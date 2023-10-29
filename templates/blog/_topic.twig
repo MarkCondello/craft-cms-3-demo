@@ -1,0 +1,26 @@
+{% extends '_layout' %}
+{% set posts = craft.entries().section('blog').topics(category).all() %}
+
+{% block content %}
+    <h1>Topic {{ category.title }}</h1>
+    {#  topic template automatically has access to a category variable. This is because every topic page is backed by a category element #}
+  {% for post in posts %}
+    {% set image = post.featuredImage.one() %}
+    <article>
+      {% if image %}
+      <div class="thumbnail">
+        {{ image.getImg() }}
+      </div>
+      {% endif %}
+      <h2>{{ post.title }}</h2>
+      
+      {% include 'blog/_feed' with {
+        postContent: post.postContent.all()
+      } only %}
+
+      <time datetime="{{ post.postDate|date('c') }}">{{ post.postDate|date('F j, Y') }}</time>
+      <p>{{ post.summary }}</p>
+      <a href="{{ post.url }}">Read More</a>
+    </article>
+  {% endfor %}
+{% endblock %}

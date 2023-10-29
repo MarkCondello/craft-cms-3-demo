@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ craft.app.language }}">
+  <head>
+    <meta charset="utf-8"/>
+    <title>{{ siteName }}</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    {# This is equivalent to using a plain <link> tag, but it takes care of generating a valid, absolute URL and building the appropriate HTML #}
+    {% do craft.app.view.registerCssFile('@web/styles.css') %}
+  </head>
+  <body>
+    {# Get the first segment of the current URI: #}
+    {% set navSegment = craft.app.request.getSegment(1) %}
+    <header>
+      <a class="home" href="{{ siteUrl }}">Home</a>
+      <nav>
+        <ul>
+          <li>
+            <a href="{{ url('blog') }}" class="{{ navSegment == 'blog' ? 'active' : 'inactive' }}">Blog</a>
+          </li>
+          <li>
+            <a href="{{ url('about') }}" class="{{ navSegment == 'about' ? 'active' : 'inactive' }}">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    {% block content %}
+    {% endblock %}
+    <footer>
+      <div class="description">
+        {{ siteinfo.description}}
+      </div>
+      <div class="copyright">&copy;{{ now | date('Y')}}</div>
+      <div class="colophon">Built with <a href="https://craftcms.com" target="_blank">Craft</a></div>
+    </footer>
+  </body>
+</html>
