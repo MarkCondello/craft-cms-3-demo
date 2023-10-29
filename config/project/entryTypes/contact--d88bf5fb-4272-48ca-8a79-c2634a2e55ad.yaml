@@ -1,0 +1,56 @@
+fieldLayouts:
+  40270005-a2c0-4a76-9d67-5a8504e489c6:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7dda1919-74c9-476b-a09e-9c7025471c10 # Banner Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: ceaeb548-061b-4ee5-8cd9-ac865e385841 # Intro
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: contact
+hasTitleField: false
+name: 'Contact Us'
+section: 78fe20fa-61f4-4367-a3c6-c9e68c84ccaf # Contact Us
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

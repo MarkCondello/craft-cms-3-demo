@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: contact
+name: 'Contact Us'
+propagationMethod: all
+siteSettings:
+  c4dd095f-d021-49d1-acf9-66e3093fd9e3: # Craft Cms 3
+    enabledByDefault: true
+    hasUrls: true
+    template: _singles/contact
+    uriFormat: contact-us
+type: single

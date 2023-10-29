@@ -1,0 +1,33 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: ea1f0d66-614d-4b37-b72a-16ffb6a80562 # ContactUs
+handle: bannerImage
+instructions: ''
+name: 'Banner Image'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds: null
+  defaultUploadLocationSource: 'volume:28fe9c2f-cfc3-46cb-b61c-0a8848f9187d' # Images
+  defaultUploadLocationSubpath: banners/
+  limit: ''
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: ''
+  selectionLabel: ''
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:28fe9c2f-cfc3-46cb-b61c-0a8848f9187d' # Images
+  singleUploadLocationSubpath: ''
+  source: null
+  sources:
+    - 'volume:28fe9c2f-cfc3-46cb-b61c-0a8848f9187d' # Images
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets
