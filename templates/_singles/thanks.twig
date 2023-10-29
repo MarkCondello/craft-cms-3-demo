@@ -1,0 +1,5 @@
+{% extends '_layout' %}
+
+{% block content %}
+<h1>Thanks for your message, {{ craft.app.request.getQueryParam('from') }}!</h1>
+{% endblock %}

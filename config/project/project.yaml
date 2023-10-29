@@ -1,4 +1,4 @@
-dateModified: 1698552090
+dateModified: 1698552548
 email:
   fromEmail: mark.condello@sgyagency.com.au
   fromName: 'Craft Cms 3'
@@ -13,12 +13,14 @@ meta:
     7dda1919-74c9-476b-a09e-9c7025471c10: 'Banner Image' # Banner Image
     28fe9c2f-cfc3-46cb-b61c-0a8848f9187d: Images # Images
     31e18a9d-bbb5-49fe-bde6-548a731041ef: SiteInfo # SiteInfo
+    43f7a0fd-0549-45c4-bb1c-d7aa8bbe1f77: ThankYou # ThankYou
     51c97ce3-fefb-497b-b29d-9ffdbc379cae: Image # Image
     77e26224-d08a-4f57-b474-fef3332a73ec: Post # Post
     78fe20fa-61f4-4367-a3c6-c9e68c84ccaf: 'Contact Us' # Contact Us
     83b528d0-fc01-46cd-980f-53d4c49e0ea3: 'Craft Cms 3' # Craft Cms 3
     357a1f41-92d6-4968-a99c-9ede4842822b: Summary # Summary
     4977e197-97b8-4936-b9ca-d51c3143f2d3: About # About
+    691768a5-d309-466d-a6af-6196a2a64902: ThankYou # ThankYou
     a57f871f-284a-42cf-b1bf-5c202be4d0c5: Blog # Blog
     ab201fe0-9011-4b2e-88f4-cafa912cbfb1: Text # Text
     b0d567f5-9a6d-4988-ad46-4b76323444db: 'Post Content' # Post Content

@@ -1,0 +1,38 @@
+fieldLayouts:
+  6d2d2348-4053-4759-a59e-f8f3f25bdb88:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: thankyou
+hasTitleField: true
+name: ThankYou
+section: 43f7a0fd-0549-45c4-bb1c-d7aa8bbe1f77 # ThankYou
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
